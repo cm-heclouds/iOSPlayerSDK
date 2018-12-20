@@ -1,0 +1,42 @@
+//
+//  PrefixHeader.pch
+//  ONTPlayer
+//
+//  Created by 汤世宇 on 2018/9/17.
+//  Copyright © 2018年 汤世宇. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+
+#import <Masonry.h>
+#import "BaseViewController.h"
+#import "ONTTipCenter.h"
+#import "PlayerInfoManager.h"
+#import "UIImageView+WebCache.h"
+#import "NSString+MD5.h"
+#import "UIImage+Extention.h"
+//#import "ONTLiveTool.h"
+#import <MJRefresh.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import <SVProgressHUD.h>
+
+#define IMAGE(imageName) [UIImage imageNamed:imageName]
+#define FONT(fontSize) [UIFont fontWithName:@"Helvetica"  size:fontSize]
+#define BOLDFONT(fontSize) [UIFont fontWithName:@"Helvetica-Bold" size:fontSize]
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define RGBColor(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+#define RGBAColor(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+
+#define LINE_WIDTH 1/[UIScreen mainScreen].scale
+
+#endif
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

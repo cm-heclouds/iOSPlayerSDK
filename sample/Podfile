@@ -1,0 +1,14 @@
+#source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+
+target 'ONTPlayer' do
+  pod 'AFNetworking'
+  pod 'SVProgressHUD'
+  pod 'IQKeyboardManager'
+  pod 'MJRefresh'
+  pod 'Masonry'
+  pod 'Bugly'
+  pod 'SDWebImage'
+  pod 'CTNetworking'
+end
+
